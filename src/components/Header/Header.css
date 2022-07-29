@@ -1,0 +1,63 @@
+.header-container {
+  width: 100%;
+  height: 4.5rem;
+  background-color: white;
+}
+.header-container .main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+.header-container .logo {
+  width: auto;
+  height: auto;
+  margin-top: 0.2rem;
+}
+.header-container .logo .logo-image {
+  width: 100%;
+  height: 2.019rem;
+}
+.header-container .links {
+  width: 40%;
+  align-items: center;
+  height: auto;
+}
+.header-container .links .links-data {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 0.75rem;
+  cursor: pointer;
+  color: #58595b;
+}
+.header-container .links .links-data .icon-button {
+  display: flex;
+  align-items: center;
+}
+.header-container .links .links-data .icon-button .icon {
+  margin-top: -0.3rem;
+  margin-left: 0.5rem;
+}
+.header-container .links .links-data button {
+  color: #f15827;
+  border: 1px solid #f15827;
+  border-radius: 2.5rem;
+  padding: 0.4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-weight: 600;
+  background-color: transparent;
+  line-height: 0.945rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  cursor: pointer;
+}
+.header-container .links .links-data button:hover {
+  background-color: #f15827;
+  color: white;
+}/*# sourceMappingURL=Header.css.map */

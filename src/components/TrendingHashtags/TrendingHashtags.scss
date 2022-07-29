@@ -1,0 +1,82 @@
+.right-container {
+  background-color: white;
+  border-radius: 8px;
+  height: 75vh;
+  padding: 1rem;
+  width: 40%;
+
+  .heading-content {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    width: 91.5%;
+    border-radius: 4px;
+
+    .right-heading {
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      color: #212121;
+    }
+    .score {
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 1.75rem;
+      color: #212121;
+    }
+  }
+
+  .icons {
+    width: max-content;
+    display: flex;
+    align-items: center;
+
+    .dropdown {
+      cursor: pointer;
+      margin-left: 0.8rem;
+    }
+  }
+
+  .right-content-wrapper {
+    max-height: 65.5vh;
+    margin-top: 1rem;
+    background-color: white;
+    padding: 1rem;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    overflow: auto;
+
+    .right-content {
+      border-bottom: 1px solid #f5f5f5;
+      overflow: hidden;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      .left-content {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        color: #616161;
+
+        .username {
+          margin-left: 2rem;
+        }
+
+        .value {
+          width: 100%;
+          margin-left: 11rem;
+          color: #f05728;
+          font-weight: 500;
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+        }
+      }
+    }
+  }
+}

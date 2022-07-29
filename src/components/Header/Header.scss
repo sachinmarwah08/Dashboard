@@ -1,0 +1,76 @@
+.header-container {
+  width: 100%;
+  height: 4.5rem;
+  background-color: white;
+  // font-family: "Nexa";
+
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .logo {
+    width: auto;
+    height: auto;
+    margin-top: 0.2rem;
+
+    .logo-image {
+      width: 100%;
+      height: 2.019rem;
+    }
+  }
+
+  .links {
+    width: 40%;
+    align-items: center;
+    height: auto;
+
+    .links-data {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      align-items: center;
+      font-size: 0.75rem;
+      font-weight: 600;
+      line-height: 0.75rem;
+      cursor: pointer;
+      color: #58595b;
+
+      // @font-face {
+      //   font-family: "Nexa";
+      //   src: url("./Fonts/Nexa\ Light.otf");
+      //   font-style: normal;
+      // }
+      .icon-button {
+        display: flex;
+        align-items: center;
+
+        & .icon {
+          margin-top: -0.3rem;
+          margin-left: 0.5rem;
+        }
+      }
+
+      & button {
+        color: #f15827;
+        border: 1px solid #f15827;
+        border-radius: 2.5rem;
+        padding: 0.4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-weight: 600;
+        background-color: transparent;
+        line-height: 0.945rem;
+        max-width: max-content;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f15827;
+          color: white;
+        }
+      }
+    }
+  }
+}

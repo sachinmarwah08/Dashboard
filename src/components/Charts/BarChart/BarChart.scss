@@ -1,0 +1,83 @@
+.wrapper {
+  width: 50%;
+  max-height: 40rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: auto;
+  margin-top: 1.5rem;
+
+  .sort-icon {
+    cursor: pointer;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .bar-chart-wrapper {
+    background-color: white;
+    width: 100%;
+    max-height: 30rem;
+    // margin-bottom: 60rem;
+    border-radius: 8px;
+    overflow: auto;
+  }
+  .chart-content {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    padding-left: 1rem;
+
+    .country {
+      // border-left: 1px solid #212121;
+      font-weight: 500;
+      font-size: 12px;
+      width: 13%;
+      text-align: right;
+      line-height: 18px;
+      color: #212121;
+    }
+
+    .bar {
+      width: 75%;
+      background-color: #ffb800;
+      height: 2rem;
+      margin-left: 0.5rem;
+      padding-right: 2rem;
+      border-radius: 0px 8px 8px 0px;
+    }
+  }
+  .chart-bar {
+    overflow: scroll;
+    height: 30rem;
+  }
+
+  .side-logos {
+    display: flex;
+    width: max-content;
+    align-items: center;
+
+    .WorldMap {
+      width: 40px;
+      height: 40px;
+    }
+
+    table {
+      width: 40px;
+      height: 40px;
+    }
+
+    .bigArrow {
+      width: 39px;
+      height: 39px;
+    }
+  }
+}

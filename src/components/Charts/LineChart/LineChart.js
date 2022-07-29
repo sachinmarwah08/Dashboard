@@ -74,8 +74,8 @@ const LineChartData = () => {
         <div className="heading-content">
           <div className="heading">Wellbeing Sentiment Score Over Time</div>
           <div className="right-icons">
-            <img className="icon" src={downloadIcon} />
-            <img className="icon" src={shareIcon} />
+            <img alt="downloadIcon" className="icon" src={downloadIcon} />
+            <img alt="shareIcon" className="icon" src={shareIcon} />
           </div>
         </div>
         <div className="buttons">

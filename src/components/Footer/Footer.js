@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-left-container">
         <div className="footer-column-one">
           <div className="footer-li">
-            <img src={logo}></img>
+            <img alt="logo" src={logo}></img>
             <p className="title-logo">Wholistic Wellbeing for a better life</p>
           </div>
         </div>
@@ -45,8 +45,12 @@ const Footer = () => {
               healthier, happer you
             </p>
             <div className="logos-apple">
-              <img className="appleLogo" src={appleLogo}></img>
-              <img className="googleLogo" src={googlePlayLogo}></img>
+              <img alt="appleLogo" className="appleLogo" src={appleLogo}></img>
+              <img
+                alt="googlePlayLogo"
+                className="googleLogo"
+                src={googlePlayLogo}
+              ></img>
             </div>
           </div>
         </div>

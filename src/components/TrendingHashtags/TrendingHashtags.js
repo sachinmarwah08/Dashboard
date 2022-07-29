@@ -10,7 +10,7 @@ const TrendingHashtags = () => {
         <div className="right-heading">Trending Hashtags</div>
         <div className="icons">
           <p className="score">Sentiment Score</p>
-          <img className="dropdown" src={dropdown}></img>
+          <img alt="dropdown" className="dropdown" src={dropdown}></img>
         </div>
       </div>
       <div className="right-content-wrapper">

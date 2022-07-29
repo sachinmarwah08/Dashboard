@@ -1,17 +1,17 @@
 import React from "react";
 import "./BarChart.scss";
-import {
-  BarChart,
-  Bar,
-  Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-  Rectangle,
-} from "recharts";
+// import {
+//   BarChart,
+//   Bar,
+//   Cell,
+//   XAxis,
+//   YAxis,
+//   CartesianGrid,
+//   Tooltip,
+//   Legend,
+//   ResponsiveContainer,
+//   Rectangle,
+// } from "recharts";
 import Icon from "../../../Images/Dropdown.svg";
 
 const data = [
@@ -113,7 +113,7 @@ const BarChartComponent = () => {
         <h1 className="heading">
           Countries Rankings by Wellbeing Sentiment Score
         </h1>
-        <img className="sort-icon" src={Icon}></img>
+        <img alt="sort-icon" className="sort-icon" src={Icon}></img>
       </div>
       <div className="bar-chart-wrapper">
         <div className="chart-bar">

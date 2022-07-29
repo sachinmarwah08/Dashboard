@@ -21,9 +21,9 @@ const MapChartComponent = () => {
       <div className="content">
         <h1 className="heading">Country Ranking</h1>
         <div className="side-logos">
-          <img className="WorldMap" src={WorldMap}></img>
-          <img className="table" src={Table}></img>
-          <img className="bigArrow" src={BigArrow}></img>
+          <img alt="WorldMap" className="WorldMap" src={WorldMap}></img>
+          <img alt="Table" className="table" src={Table}></img>
+          <img alt="BigArrow" className="bigArrow" src={BigArrow}></img>
         </div>
       </div>
       <div className="bar-chart-wrapper">

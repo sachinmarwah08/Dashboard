@@ -35,7 +35,7 @@ const RealTimeFeeds = () => {
           placeholder="search..."
         />
         <div className="search-icon">
-          <img src={searchIcon} />
+          <img alt="searchIcon" src={searchIcon} />
         </div>
       </div>
 
@@ -53,7 +53,11 @@ const RealTimeFeeds = () => {
             </p>
             <p className="link">{item.link}</p>
             <div className="twitter-details">
-              <img className="twitter-logo" src={item.twitterLogo}></img>
+              <img
+                alt="twitter"
+                className="twitter-logo"
+                src={item.twitterLogo}
+              ></img>
               <p className="username">{item.userName}</p>
             </div>
           </div>

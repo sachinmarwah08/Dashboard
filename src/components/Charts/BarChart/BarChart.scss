@@ -8,18 +8,30 @@
 
   .sort-icon {
     cursor: pointer;
+
+    @media (max-width: 998px) {
+      width: 25px;
+      height: 25px;
+    }
   }
 
   .content {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    align-items: center;
   }
 
   .heading {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
+
+    @media (max-width: 998px) {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 28px;
+    }
   }
 
   .bar-chart-wrapper {
@@ -44,6 +56,14 @@
       text-align: right;
       line-height: 18px;
       color: #212121;
+
+      @media (max-width: 998px) {
+        font-weight: 500;
+        font-size: 8px;
+        width: 15%;
+        font-weight: 500;
+        color: #212121;
+      }
     }
 
     .bar {
@@ -53,31 +73,14 @@
       margin-left: 0.5rem;
       padding-right: 2rem;
       border-radius: 0px 8px 8px 0px;
+      @media (max-width: 998px) {
+        height: 1.5rem;
+        width: 75%;
+      }
     }
   }
   .chart-bar {
     overflow: scroll;
     height: 30rem;
-  }
-
-  .side-logos {
-    display: flex;
-    width: max-content;
-    align-items: center;
-
-    .WorldMap {
-      width: 40px;
-      height: 40px;
-    }
-
-    table {
-      width: 40px;
-      height: 40px;
-    }
-
-    .bigArrow {
-      width: 39px;
-      height: 39px;
-    }
   }
 }

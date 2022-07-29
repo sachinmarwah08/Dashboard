@@ -14,7 +14,7 @@ function App() {
       <Contries />
       <NewsAndHashTags />
       <LineChartData />
-      <Footer />
+      {/*<Footer /> */}
     </>
   );
 }

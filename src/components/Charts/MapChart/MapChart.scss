@@ -15,6 +15,11 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
+    @media (max-width: 998px) {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 28px;
+    }
   }
 
   .bar-chart-wrapper {
@@ -40,18 +45,30 @@
       width: 40px;
       height: 40px;
       cursor: pointer;
+      @media (max-width: 998px) {
+        width: 25px;
+        height: 25px;
+      }
     }
 
     .table {
       width: 40px;
       height: 40px;
       cursor: pointer;
+      @media (max-width: 998px) {
+        width: 25px;
+        height: 25px;
+      }
     }
 
     .bigArrow {
       width: 39px;
       height: 39px;
       cursor: pointer;
+      @media (max-width: 998px) {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 }

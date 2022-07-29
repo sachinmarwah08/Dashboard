@@ -27,6 +27,10 @@
     align-items: center;
     height: auto;
 
+    @media (max-width: 998px) {
+      width: 50%;
+    }
+
     .links-data {
       display: flex;
       justify-content: space-around;
@@ -38,11 +42,18 @@
       cursor: pointer;
       color: #58595b;
 
-      // @font-face {
-      //   font-family: "Nexa";
-      //   src: url("./Fonts/Nexa\ Light.otf");
-      //   font-style: normal;
-      // }
+      @media (max-width: 998px) {
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 0.75rem;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 0.75rem;
+      }
+
       .icon-button {
         display: flex;
         align-items: center;
@@ -69,6 +80,26 @@
         &:hover {
           background-color: #f15827;
           color: white;
+        }
+        @media (max-width: 998px) {
+          font-size: 1.2rem;
+          font-weight: 600;
+          line-height: 0.75rem;
+
+          &:hover {
+            background-color: #f15827;
+            color: white;
+          }
+        }
+        @media (max-width: 768px) {
+          font-size: 1.4rem;
+          font-weight: 600;
+          line-height: 0.75rem;
+
+          &:hover {
+            background-color: #f15827;
+            color: white;
+          }
         }
       }
     }

@@ -14,7 +14,8 @@
   .logo {
     width: auto;
     height: auto;
-    margin-top: 0.2rem;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
 
     .logo-image {
       width: 100%;
@@ -24,7 +25,7 @@
 
   .links {
     width: 40%;
-    align-items: center;
+
     height: auto;
 
     @media (max-width: 998px) {
@@ -33,7 +34,8 @@
 
     .links-data {
       display: flex;
-      justify-content: space-around;
+      align-items: center;
+      justify-content: space-evenly;
       list-style: none;
       align-items: center;
       font-size: 0.75rem;
@@ -73,7 +75,6 @@
         padding-right: 1.5rem;
         font-weight: 600;
         background-color: transparent;
-        line-height: 0.945rem;
         max-width: max-content;
         cursor: pointer;
 

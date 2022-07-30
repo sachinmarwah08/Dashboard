@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./LineChart.scss";
 import downloadIcon from "../../../Images/download.svg";
 import shareIcon from "../../../Images/share.svg";
@@ -18,6 +18,7 @@ import {
   BarChart,
   Bar,
 } from "recharts";
+import Button from "../../Button/Button";
 
 const pdata = [
   {
@@ -68,6 +69,13 @@ const pdata = [
 ];
 
 const LineChartData = () => {
+  const [selected, setSelected] = useState("Past 1 months");
+
+  const [selectCountry, setselectCountry] = useState("India");
+
+  const dateSelect = ["react ", "vue", "Angular"];
+
+  const countrySelect = ["react ", "vue", "Angular"];
   return (
     <div className="lineChart-container">
       <div className="whole-container">
@@ -80,14 +88,29 @@ const LineChartData = () => {
         </div>
         <div className="buttons">
           <div className="left-button">
-            <button className="left-ouline-button">
+            {/* <button className="left-ouline-button">
               India
               <FontAwesomeIcon icon={faAngleDown} />
-            </button>
-            <button className="left-ouline-buttonTwo">
+            </button> */}
+            <div className="select-country-btn">
+              <Button
+                options={countrySelect}
+                selected={selectCountry}
+                setSelected={setselectCountry}
+              />
+            </div>
+            <div className="select-date-btn">
+              <Button
+                options={dateSelect}
+                selected={selected}
+                setSelected={setSelected}
+              />
+            </div>
+
+            {/* <button className="left-ouline-buttonTwo">
               Past 1 months
               <FontAwesomeIcon icon={faAngleDown} />
-            </button>
+            </button> */}
           </div>
           <div className="right-button">
             <button className="right-ouline-button">

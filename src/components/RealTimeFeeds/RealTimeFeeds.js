@@ -35,7 +35,11 @@ const RealTimeFeeds = () => {
           placeholder="search..."
         />
         <div className="search-icon">
-          <img alt="searchIcon" src={searchIcon} />
+          <img
+            className="search-icon-image"
+            alt="searchIcon"
+            src={searchIcon}
+          />
         </div>
       </div>
 

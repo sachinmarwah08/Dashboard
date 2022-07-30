@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./BarChart.scss";
 // import {
 //   BarChart,
@@ -13,6 +13,8 @@ import "./BarChart.scss";
 //   Rectangle,
 // } from "recharts";
 import Icon from "../../../Images/Dropdown.svg";
+import highSortDown from "../../../Images/bi-sort-down.svg";
+import lowSortDown from "../../../Images/bi-sort-down-alt.svg";
 
 const data = [
   {
@@ -107,13 +109,37 @@ const data = [
   },
 ];
 const BarChartComponent = () => {
+  const [isActive, setIsActive] = useState(false);
   return (
     <div className="wrapper">
       <div className="content">
         <h1 className="heading">
           Countries Rankings by Wellbeing Sentiment Score
         </h1>
-        <img alt="sort-icon" className="sort-icon" src={Icon}></img>
+        <div
+          onClick={(e) => {
+            setIsActive(!isActive);
+          }}
+          className="filter"
+        >
+          <img
+            alt="sort-icon"
+            className={`${!isActive ? "sort-icon" : "sort-icon-open"}`}
+            src={Icon}
+          ></img>
+          {isActive && (
+            <div className="filter-dropdown-content">
+              <div className="filter-dropdown-item">
+                High to low
+                <img className="sort-down" src={highSortDown}></img>
+              </div>
+              <div className="filter-dropdown-item">
+                Low to high
+                <img className="sort-down" src={lowSortDown}></img>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
       <div className="bar-chart-wrapper">
         <div className="chart-bar">

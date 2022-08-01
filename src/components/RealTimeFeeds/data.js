@@ -95,6 +95,6 @@ export const data = [
       "#positivity #positiveenergy #magicmoments #meditation #inspiration #behapov #smile #freedom #lovelife",
     twitterLogo: twitterLogo,
     link: "https://t.co/DXLgcE7KNE",
-    userName: "@MeditationalSt8",
+    userName: "@Sachin",
   },
 ];

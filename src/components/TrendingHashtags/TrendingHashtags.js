@@ -1,5 +1,6 @@
 import React from "react";
 import dropdown from "../../Images/DropdownWhite.svg";
+import Sort from "../SortFilter/Sort";
 import { trendingHashtags } from "./data";
 import "./TrendingHashtags.scss";
 
@@ -10,7 +11,7 @@ const TrendingHashtags = () => {
         <div className="right-heading">Trending Hashtags</div>
         <div className="icons">
           <p className="score">Sentiment Score</p>
-          <img alt="dropdown" className="dropdown" src={dropdown}></img>
+          <Sort Icon={dropdown} />
         </div>
       </div>
       <div className="right-content-wrapper">

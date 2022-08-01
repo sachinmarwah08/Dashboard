@@ -8,7 +8,7 @@
 
   .column-one {
     flex-direction: column;
-    width: 50%;
+    width: 32%;
     align-items: center;
 
     .digit-one {
@@ -60,7 +60,7 @@
     flex-direction: column;
     align-items: center;
     // margin-left: 4rem;
-    width: max-content;
+    width: 30%;
 
     .column-two-digit-one {
       color: #ff3c00;
@@ -68,11 +68,11 @@
       font-weight: 600;
       line-height: 24px;
       margin-bottom: 0.5rem;
-      margin-top: 1.5rem;
+      margin-top: 0.5rem;
 
       @media (max-width: 998px) {
         font-weight: 600;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 1rem;
       }
     }
@@ -94,7 +94,7 @@
     padding-left: 6rem;
 
     .heading {
-      color: #212121;
+      color: #f05728;
       font-weight: 600;
       font-size: 1.875rem;
       line-height: 3rem;

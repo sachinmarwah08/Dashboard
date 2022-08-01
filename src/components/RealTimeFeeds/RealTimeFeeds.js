@@ -2,14 +2,58 @@ import React, { useState } from "react";
 import "./RealTimeFeeds.scss";
 import searchIcon from "../../Images/SearchIcon.svg";
 import { data } from "./data";
+import { faXmark, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Content from "./Content";
 
 const RealTimeFeeds = () => {
-  const [usedata] = useState(data);
+  const [filterData, setFilterData] = useState(data);
+  const [wordEntered, setWordEntered] = useState("");
+  const [active, setActive] = useState("Real-time-Tweets");
+
+  const handleFilter = (event) => {
+    const searchWord = event.target.value;
+    setWordEntered(searchWord);
+    const newFilter = data.filter((value) => {
+      return (
+        value.heading.toLowerCase().includes(searchWord.toLowerCase()) ||
+        value.userName.toLowerCase().includes(searchWord.toLowerCase()) ||
+        value.colredHeading.toLowerCase().includes(searchWord.toLowerCase()) ||
+        value.hashtags.toLowerCase().includes(searchWord.toLowerCase()) ||
+        value.coloredHastags.toLowerCase().includes(searchWord.toLowerCase()) ||
+        value.link.toLowerCase().includes(searchWord.toLowerCase())
+      );
+    });
+
+    setFilterData(newFilter);
+  };
+
+  const clearData = () => {
+    setFilterData(data);
+    setWordEntered("");
+  };
+
   return (
     <div className="left-container">
       <div className="main-heading">
-        <h1 className="heading">Real-time Tweets</h1>
-        <h1 className="second-heading">Real-time News</h1>
+        <button
+          onClick={() => setActive("Real-time-Tweets")}
+          className={` ${
+            active === "Real-time-Tweets" ? "colored-heading" : "heading"
+          }`}
+        >
+          Real-time Tweets
+        </button>
+        <button
+          onClick={() => setActive("Real-time-News")}
+          className={` ${
+            active === "Real-time-News"
+              ? "second-colored-heading"
+              : "second-heading"
+          }`}
+        >
+          Real-time News
+        </button>
       </div>
       <div className="radio-button">
         <div>
@@ -29,44 +73,30 @@ const RealTimeFeeds = () => {
       </div>
       <div className="search-container">
         <input
+          onChange={handleFilter}
+          value={wordEntered}
           className="seacrh-bar"
           type="text"
           name="search"
           placeholder="search..."
         />
         <div className="search-icon">
-          <img
-            className="search-icon-image"
-            alt="searchIcon"
-            src={searchIcon}
-          />
+          {filterData.length === 0 ? (
+            <FontAwesomeIcon
+              onClick={clearData}
+              className="close-icon-image"
+              icon={faXmark}
+            />
+          ) : (
+            <FontAwesomeIcon
+              className="search-icon-image"
+              icon={faMagnifyingGlass}
+            />
+          )}
         </div>
       </div>
-
-      <div className="left-content-wrapper">
-        {usedata.map((item) => (
-          <div key={item.id} className="left-content">
-            <h1 className="left-content-heading">
-              <span className="heading-colored">{item.colredHeading}</span> ❤️
-              {item.heading}
-            </h1>
-            <p className="hashtags">
-              {item.hashtags}
-              <span className="hashtags-colored">{item.coloredHastags}</span>
-              ❤️
-            </p>
-            <p className="link">{item.link}</p>
-            <div className="twitter-details">
-              <img
-                alt="twitter"
-                className="twitter-logo"
-                src={item.twitterLogo}
-              ></img>
-              <p className="username">{item.userName}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+      {active === "Real-time-Tweets" && <Content filterData={filterData} />}
+      {active === "Real-time-News" && <Content filterData={filterData} />}
     </div>
   );
 };

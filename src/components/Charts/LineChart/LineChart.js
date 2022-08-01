@@ -157,14 +157,16 @@ const LineChartData = () => {
             <Line
               type="monotone"
               dataKey="student"
+              strokeDasharray="12"
               stroke="red"
-              activeDot={{ r: 8 }}
+              // activeDot={{ r: 8 }}
             />
             <Line
               type="monotone"
               dataKey="fees"
+              strokeDasharray="4 2"
               stroke="green"
-              activeDot={{ r: 8 }}
+              // activeDot={{ r: 8 }}
             />
           </LineChart>
         </ResponsiveContainer>

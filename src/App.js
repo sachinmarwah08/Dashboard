@@ -5,7 +5,7 @@ import Contries from "./components/Contries/Contries";
 import NewsAndHashTags from "./components/NewsAndHashTags/NewsAndHashTags";
 import LineChartData from "./components/Charts/LineChart/LineChart";
 import Footer from "./components/Footer/Footer";
-import GoogleMap from "./components/googleMap";
+import GoogleMap from "./components/Charts/MapChart/googleMap";
 
 function App() {
   return (

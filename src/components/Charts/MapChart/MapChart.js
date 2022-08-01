@@ -6,7 +6,7 @@ import BigArrow from "../../../Images/bif-Arrow.png";
 // import { MapContainer, CircleMarker, TileLayer, Tooltip } from "react-leaflet";
 // import "leaflet/dist/leaflet.css";
 import data from "./Cities";
-import GoogleMap from "../../googleMap";
+import GoogleMap from "./googleMap";
 // import { Chart } from "react-google-charts";
 
 // const data = [

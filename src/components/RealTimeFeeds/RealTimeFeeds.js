@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./RealTimeFeeds.scss";
-import searchIcon from "../../Images/SearchIcon.svg";
 import { data } from "./data";
 import { faXmark, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

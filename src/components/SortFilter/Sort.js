@@ -21,11 +21,19 @@ const Sort = ({ Icon }) => {
         <div className="filter-dropdown-content">
           <div className="filter-dropdown-item">
             High to low
-            <img className="sort-down" src={highSortDown}></img>
+            <img
+              alt="highSortDown"
+              className="sort-down"
+              src={highSortDown}
+            ></img>
           </div>
           <div className="filter-dropdown-item">
             Low to high
-            <img className="sort-down" src={lowSortDown}></img>
+            <img
+              alt="lowSortDown"
+              className="lowSortDown"
+              src={lowSortDown}
+            ></img>
           </div>
         </div>
       )}

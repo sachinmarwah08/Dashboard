@@ -1,7 +1,6 @@
 import React from "react";
-import { data } from "./data";
 
-const Content = ({ filterData, cardIndex }) => {
+const Content = ({ filterData }) => {
   return (
     <div className="left-content-wrapper">
       {filterData.map((item, key) => (
@@ -15,7 +14,7 @@ const Content = ({ filterData, cardIndex }) => {
             <span className="hashtags-colored">{item.coloredHastags}</span>
             ❤️
           </p>
-          <a href={item.link} target="_blank" className="link">
+          <a href={item.link} rel="noreferrer" target="_blank" className="link">
             {item.link}
           </a>
           <div className="twitter-details">

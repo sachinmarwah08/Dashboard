@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./NewsAndHashTags.scss";
 import RealTimeFeeds from "../RealTimeFeeds/RealTimeFeeds";
 import TrendingHashtags from "../TrendingHashtags/TrendingHashtags";

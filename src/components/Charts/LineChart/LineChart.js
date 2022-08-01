@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import "./LineChart.scss";
 import downloadIcon from "../../../Images/download.svg";
 import shareIcon from "../../../Images/share.svg";
-import { faAngleDown, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   LineChart,
   Line,
   XAxis,
   YAxis,
-  CartesianGrid,
+  // CartesianGrid,
   Tooltip,
-  Legend,
+  // Legend,
   ResponsiveContainer,
-  AreaChart,
-  Area,
-  BarChart,
-  Bar,
+  // AreaChart,
+  // Area,
+  // BarChart,
+  // Bar,
 } from "recharts";
 import Button from "../../Button/Button";
 

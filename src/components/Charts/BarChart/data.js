@@ -15,6 +15,16 @@ const data = {
   },
   xAxis: {
     categories: [
+      "Russia",
+      "China",
+      "India",
+      "United States",
+      "Indonesia",
+      "Nigeria",
+      "Brazil",
+      "Mexico",
+      "Japan",
+      "Ethiopia",
       "Austria",
       "Estonia",
       "Sweden",
@@ -23,13 +33,6 @@ const data = {
       "Latvia",
       "Finland",
       "Slovenia",
-      "Slovakia",
-      "Denmark",
-      "Latvia",
-      "Finland",
-      "Slovenia",
-      "Slovakia",
-      "Denmark",
     ],
 
     title: {
